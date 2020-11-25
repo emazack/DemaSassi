@@ -73,14 +73,18 @@ p, button{
     justify-content: space-between;
     align-items: baseline;
     padding: 0 40px;
+    text-align: center;
+}
+
+.middle-header img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
     height: 800px; 
-}
-
-.middle-header {
-    text-align: center;
 }
 
 .middle-header p {
