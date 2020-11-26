@@ -7,6 +7,7 @@
     list-style-type: none;
     text-align: center;
     color: white;
+    outline: none;
 }
 
 .wrapper {
@@ -14,9 +15,15 @@
     padding-right: 80px;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+}
+
+
 /* typography */
 
-h1{
+h1 {
     font-family: 'TitlingGothicFB Comp', sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -26,7 +33,8 @@ h1{
     font-feature-settings: 'liga' off;
 }
 
-p, button{
+p,
+button {
     font-family: 'TitlingGothicFB Comp', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -35,64 +43,77 @@ p, button{
     text-align: center;
 }
 
+
 /* Header */
 
-/* header{
-    background-image: url("img/header-bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
-    height: 800px; 
-} */
+header {
+    height: 800px;
+}
 
 .top-header {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 37px;
-    margin-bottom: 190px;
+    margin-bottom: 190px; */
 }
 
 .top-header nav ul {
-    display: flex;
+    /* display: flex; */
+    display: none;
 }
+
 .top-header nav ul li {
-    font-family: 'TitlingGothicFB Comp', sans-serif;
+    /* font-family: 'TitlingGothicFB Comp', sans-serif;
     font-style: normal;
     font-weight: 450;
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-right: 48px;
+    margin-right: 48px; */
+}
+
+.header-slider {
+    height: 100%;
 }
 
 
-.middle-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 0 40px;
-    text-align: center;
-}
-
-.middle-header img {
+/* .header-slider .bg-slider {
     position: absolute;
     left: 0px;
     top: 0px;
     z-index: -1;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 800px; 
+} */
+
+.slidebar-element {
+    position: relative;
+    height: 800px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-.middle-header p {
+.prev {
+    position: absolute;
+    left: 40px;
+    bottom: 50%;
+}
+
+.next {
+    position: absolute;
+    right: 40px;
+    bottom: 50%;
+}
+
+.header-slider p {
     margin-bottom: 98px;
 }
 
-header button {
-    background-color: transparent;
+header .scopri-button {
     padding: 10px 29px;
     border: 1px solid #FFFFFF;
     border-radius: 5px;
@@ -113,72 +134,59 @@ header button {
     align-items: baseline;
 }
 
+
 /* Sii produttivo */
 
 #produttivo {
     background-color: darkgrey;
 }
 
-.top-produttivo{
-    
-}
+.top-produttivo {}
 
-.middle-produttivo{
+.middle-produttivo {
     display: flex;
 }
 
-.bottom-produttivo{
-    
-}
+.bottom-produttivo {}
+
 
 /* conta su di noi */
+
 #conta {
     background-color: grey;
 }
 
-.top-conta{
-    
-}
-.middle-conta{
+.top-conta {}
+
+.middle-conta {
     display: flex;
     justify-content: space-around;
 }
-.bottom-conta{
-    
-}
 
+.bottom-conta {}
 
 
 /* chi ci ha scelto */
+
 #scelto {
     background-color: darkgrey;
 }
 
-.top-scelto{
-    
-}
-.middle-scelto{
+.top-scelto {}
 
-}
-.bottom-scelto{
-    
-}
+.middle-scelto {}
+
+.bottom-scelto {}
 
 
 /* chi siamo */
+
 #siamo {
     background-color: lightgray;
 }
 
-.top-siamo{
-    
-}
-.middle-siamo{
+.top-siamo {}
 
-}
-.bottom-siamo{
-    
-}
+.middle-siamo {}
 
-
-
+.bottom-siamo {}
