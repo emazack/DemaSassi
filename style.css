@@ -1,46 +1,46 @@
 /* General rules */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    padding        : 0;
+    margin         : 0;
+    box-sizing     : border-box;
     list-style-type: none;
-    text-align: center;
-    color: white;
-    outline: none;
+    text-align     : center;
+    color          : white;
+    outline        : none;
 }
 
 .wrapper {
-    padding-left: 80px;
+    padding-left : 80px;
     padding-right: 80px;
 }
 
 button {
     background-color: transparent;
-    border: none;
+    border          : none;
 }
 
 
 /* typography */
 
 h1 {
-    font-family: 'TitlingGothicFB Comp', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 200px;
-    line-height: 95%;
-    text-align: center;
-    font-feature-settings: 'liga' off;
+    font-family          : 'TitlingGothicFB Comp', sans-serif;
+    font-style           : normal;
+    font-weight          : 900;
+    font-size            : 200px;
+    line-height          : 95%;
+    text-align           : center;
+    font-feature-settings: 'liga'off;
 }
 
 p,
 button {
     font-family: 'TitlingGothicFB Comp', sans-serif;
-    font-style: normal;
+    font-style : normal;
     font-weight: 500;
-    font-size: 26px;
+    font-size  : 26px;
     line-height: 130%;
-    text-align: center;
+    text-align : center;
 }
 
 
@@ -48,65 +48,88 @@ button {
 
 header {
     height: 800px;
+    position: relative;
 }
 
 .top-header {
-    /* display: flex;
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 37px;
-    margin-bottom: 190px; */
+    align-items    : center;
+    padding-top    : 37px;
+    margin-bottom  : 190px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
 }
 
 .top-header nav ul {
-    /* display: flex; */
-    display: none;
+    display: flex;
 }
 
 .top-header nav ul li {
-    /* font-family: 'TitlingGothicFB Comp', sans-serif;
-    font-style: normal;
-    font-weight: 450;
-    font-size: 20px;
-    line-height: 24px;
+    font-family   : 'TitlingGothicFB Comp', sans-serif;
+    font-style    : normal;
+    font-weight   : 450;
+    font-size     : 20px;
+    line-height   : 24px;
     text-transform: uppercase;
-    color: #FFFFFF;
-    margin-right: 48px; */
+    color         : #FFFFFF;
+    margin-right  : 48px;
 }
 
-.header-slider {
-    height: 100%;
+.top-header nav ul li:last-child > * {
+    color: grey;
 }
 
+.top-header nav ul li:last-child > *:hover {
+    color: #3E7EE6;
+}
 
-/* .header-slider .bg-slider {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+.top-header nav ul li span:first-child {
+    border-right: 1px solid grey;
+    padding-right: 3px;
+}
+
+.top-header nav ul li span:last-child {
+    padding-left: 5px;
+}
 
 .slidebar-element {
-    position: relative;
-    height: 800px;
-    background-size: cover;
+    position           : relative;
+    height             : 800px;
+    background-size    : cover;
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat  : no-repeat;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    padding-top: 270px;
+
+    /* position: absolute; */
+    /* top: 227px;
+    right: 534px; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.title h1{
+    margin-bottom: 25px;
 }
 
 .prev {
     position: absolute;
-    left: 40px;
-    bottom: 50%;
+    left    : 40px;
+    bottom  : 50%;
 }
 
 .next {
     position: absolute;
-    right: 40px;
-    bottom: 50%;
+    right   : 40px;
+    bottom  : 50%;
 }
 
 .header-slider p {
@@ -114,28 +137,41 @@ header {
 }
 
 header .scopri-button {
-    padding: 10px 29px;
-    border: 1px solid #FFFFFF;
+    padding      : 6px 30px;
+    border       : 1px solid #FFFFFF;
     border-radius: 5px;
-    position: absolute;
-    bottom: 25%;
-    right: 43%;
-}
-
-.slider-point {
-    width: 5px;
-    height: 5px;
-    border-radius: 100px;
-    border: 1px solid white;
-    padding: 17.5px;
-    background: transparent;
+    position     : absolute;
+    bottom       : 19%;
+    right        : 44%;
 }
 
 .bottom-header {
     position: absolute;
-    bottom: 15%;
-    right: 250px;
+    bottom  : 80px;
+    right   : 220px;
+}
 
+.bottom-header .slick-dots li {
+    width        : 5px;
+    height       : 5px;
+    border-radius: 100px;
+    border       : 1px solid white;
+    padding      : 17.5px;
+    background   : transparent;
+}
+  
+.slick-dots li button {
+    content: "●";
+    top    : 7px;
+    left   : 7px;
+}
+
+.slick-dots li.slick-active button::before,
+.slick-dots li button::before {
+    color    : #999999;
+    top      : 7px;
+    left     : 7px;
+    font-size: 5px;
 }
 
 .bottom-header .slick-dots {
@@ -167,13 +203,12 @@ header .scopri-button {
 .top-conta {}
 
 .middle-conta {
-    display: flex;
+    display        : flex;
     justify-content: space-around;
 }
 
 .bottom-conta {}
 
-/* chi ci ha scelto */
 
 /* chi ci ha scelto */
 
