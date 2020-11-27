@@ -18,6 +18,9 @@
 button {
     background-color: transparent;
     border          : none;
+    padding      : 6px 30px;
+    border       : 1px solid #FFFFFF;
+    border-radius: 5px;
 }
 
 
@@ -31,6 +34,14 @@ h1 {
     line-height          : 95%;
     text-align           : center;
     font-feature-settings: 'liga'off;
+}
+
+h2 {
+    font-family: 'TitlingGothicFB Comp',sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
 }
 
 p,
@@ -47,7 +58,7 @@ button {
 /* Header */
 
 header {
-    height: 800px;
+    height: 799px;
     position: relative;
 }
 
@@ -107,33 +118,31 @@ header {
     display: flex;
     flex-direction: column;
     padding-top: 270px;
-
-    /* position: absolute; */
-    /* top: 227px;
-    right: 534px; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
 }
 
 .title h1{
     margin-bottom: 25px;
 }
 
-.prev {
+.prev, .next {
     position: absolute;
-    left    : 40px;
     bottom  : 50%;
+    padding      : 0px;
+    border       : none;
+    border-radius: 0px;
+}
+
+.prev{
+    left    : 40px;
 }
 
 .next {
-    position: absolute;
     right   : 40px;
-    bottom  : 50%;
 }
 
 .header-slider p {
     margin-bottom: 98px;
+    height: 100%;
 }
 
 header .scopri-button {
@@ -178,36 +187,118 @@ header .scopri-button {
     display: flex;
 }
 
-
 /* Sii produttivo */
 
 #produttivo {
-    background-color: darkgrey;
+    background-image: url(img/produttivo.png);
+    height: 926px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 168px;
+    padding-top: 130px;
 }
 
-.top-produttivo {}
+.top-produttivo {
+    padding-bottom: 121px;   
+}
+
+.top-produttivo h1 {
+    padding-bottom: 20px;   
+}
+
 
 .middle-produttivo {
     display: flex;
+    padding-bottom: 40px;
 }
 
-.bottom-produttivo {}
+.middle-produttivo > div {
+    width: calc(100%/3);
+}
+
+.middle-produttivo div h2{
+    color: #3E7EE6;
+}
+
+.bottom-produttivo{
+    padding-bottom: 160px;
+}
 
 
 /* conta su di noi */
 
 #conta {
-    background-color: grey;
+    height: 926px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.top-conta {}
+.top-conta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.top-conta p {
+    width: 1024px;
+}
+
+.top-conta h1 {
+    padding-bottom: 35px;
+}
 
 .middle-conta {
     display        : flex;
     justify-content: space-around;
+    padding-bottom: 99.5px;
+    color: #DCDCDC;
 }
 
-.bottom-conta {}
+.middle-conta div p {
+    padding-bottom: 30px;
+}
+
+.middle-conta div h2 {
+    font-family: 'TitlingGothicFB Comp', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 95%;
+    text-align: center;
+    font-feature-settings: 'liga'
+}
+
+.bottom-conta {
+    padding-bottom: 161px;
+}
+
+.bottom-conta button {
+    border: 1px solid  #1A468E;
+}
+
+.top-conta p {
+    color: #999999;
+}
+
+.middle-conta div p, .top-conta h1, .top-conta p span, .bottom-conta button{
+    color: #1A468E;
+}
+
+.middle-conta div p, .top-conta p span{
+    font-family: 'TitlingGothicFB Comp', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 130%;
+}
+
+#conta h2{
+    color: #DCDCDC;
+}
 
 
 /* chi ci ha scelto */
