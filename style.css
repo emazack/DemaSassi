@@ -278,6 +278,7 @@ header .scopri-button {
 
 .bottom-conta button {
     border: 1px solid  #1A468E;
+    font-weight: 600;
 }
 
 .top-conta p {
@@ -340,10 +341,6 @@ header .scopri-button {
 }
 
 
-.bottom-scelto {
-}
-
-
 /* chi siamo */
 
 #siamo div {
@@ -359,8 +356,53 @@ header .scopri-button {
     padding-bottom: 30px;
 }
 
-.middle-siamo > * {
+.top-siamo p {
     color: #999999;
+    padding-bottom: 64px;
 }
 
-.bottom-siamo {}
+.middle-siamo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 64px;
+}
+
+.middle-siamo img:first-child{
+    margin-right: 135px;
+}
+
+.paragraph-siamo{
+    padding: 0px 475px;
+    padding-bottom: 90px;
+}
+
+.paragraph-siamo > *{
+    font-family: 'TitlingGothicFB Comp', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+}
+
+.paragraph-siamo p{
+    color: #999999;
+    text-align: left;
+}
+
+.paragraph-siamo p:last-child{
+    color: #3E7EE6;
+}
+
+.paragraph-siamo span, .bottom-siamo button{
+    color: #1A468E;
+}
+
+.bottom-siamo{
+    padding-bottom: 100px;
+}
+
+
+.bottom-siamo button {
+    font-weight: 600;
+    border: 1px solid  #1A468E; 
+}
