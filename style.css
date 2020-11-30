@@ -15,6 +15,8 @@
     padding-right: 80px;
 }
 
+/* button */
+
 button {
     background-color: transparent;
     border          : none;
@@ -171,7 +173,7 @@ header {
 header .scopri-button {
     position     : absolute;
     bottom       : 19%;
-    right        : 44%;
+    right        : 41%;
 }
 
 .bottom-header {
@@ -336,6 +338,8 @@ header .scopri-button {
 
 .top-scelto {
     padding-bottom: 100px;
+    padding-top: 98px;
+    max-width: 1400px;
 }
 
 .middle-scelto {
@@ -353,6 +357,10 @@ header .scopri-button {
 
 .middle-scelto p span, .middle-scelto h2 {
     color: #3E7EE6;
+}
+
+.bottom-scelto{
+    padding-bottom: 110px;
 }
 
 
@@ -417,3 +425,202 @@ header .scopri-button {
 .bottom-siamo{
     padding-bottom: 100px;
 }
+
+/* large laptop (1480px and down) */
+@media screen and (max-width: 1480px) {
+
+    /* general rules */
+
+    h1 {
+        font-weight          : 900;
+        font-size            : 150px;
+    }
+
+    /* chi siamo */
+    .paragraph-siamo {
+        padding: 0px 175px;
+        padding-bottom: 90px;
+    }
+}
+
+/* small laptop (1280px and down) */
+@media screen and (max-width: 1280px) {
+
+    /* General Rules */
+    .wrapper {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    /* Header */
+
+    .top-header{
+        padding-left: 40px;
+    };
+
+    header .scopri-button {
+        right        : 43%;
+    }
+    
+    /* chi ci ha scelto */
+    .top-scelto {
+        padding-top: 150px;
+        padding-bottom: 20px;
+    }
+
+    .middle-scelto {
+        width: 800px;
+        padding-bottom: 82px;
+    }
+}
+
+/* large tablets (tablets, 1024px and down) */
+@media screen and (max-width: 1024px) {
+
+    /* Header */
+
+    .top-header nav ul li {
+        margin-right  : 28px;
+    }
+    
+    .prev{
+        left    : 10px;
+    }
+    
+    .next {
+        right   : 10px;
+    }
+
+    header .scopri-button {
+        right        : 34%;
+    }
+
+    .bottom-header {
+        bottom  : 50px;
+        right   : 160px;
+    }
+
+
+    /* conta su di noi */
+
+    .top-conta p {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, large mobile, 802px and down) */
+@media screen and (max-width: 802px) {
+
+        /* typography */
+    
+    h1 {
+        font-weight          : 900;
+        font-size            : 100px;
+    }
+
+    /* h2 {
+        font-family: 'TitlingGothicFB Comp',sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 48px;
+    }
+
+    p{
+        font-family: 'TitlingGothicFB Comp', sans-serif;
+        font-style : normal;
+        font-weight: 500;
+        font-size  : 26px;
+        line-height: 130%;
+        text-align : center;
+    } */
+
+        /* Header */
+
+    header {
+        height: 799px;
+        position: relative;
+    }
+
+    .top-header {
+        justify-content: center;
+        padding-top    : 37px;
+        margin-bottom  : 190px;
+    }
+
+    .top-header nav ul {
+        display: none;
+    }
+
+    .title h1{
+        margin-bottom: 20px;
+    }
+
+    button.prev img, button.next img{
+        display: none;
+    }
+
+    .header-slider p {
+        padding: 0px 160px;
+    }
+
+    header .scopri-button {
+        bottom       : 25%;
+    }
+
+    .bottom-header {
+        bottom  : 80px;
+        right   : 454px;
+    }
+
+        /* Sii produttivo */
+
+    #produttivo {
+        margin-bottom: 100px;
+    }
+
+    .top-produttivo {
+        padding-bottom: 60px;   
+    }
+
+    .top-produttivo h1 {
+        padding-bottom: 20px;   
+    }
+
+
+    .middle-produttivo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    .middle-produttivo > div {
+        text-align: center;
+        padding-bottom: 60px;
+        width: 96%;
+    }
+
+    .middle-produttivo div h2{
+        padding-bottom: 20px;
+    }
+
+    .bottom-produttivo{
+        padding-bottom: 120px;
+    }
+
+
+}
+
+
+/* Small devices (mobile, 576px and down) */
+@media screen and (max-width: 576px) {
+
+}
+
+
+
+
+
+
