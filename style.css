@@ -346,12 +346,21 @@ header .scopri-button {
 
 /* chi siamo */
 
-#siamo {
-    background-color: lightgray;
+#siamo div {
+
 }
 
-.top-siamo {}
+.top-siamo{
+    padding-top: 150px;
+}
 
-.middle-siamo {}
+.top-siamo h1 {
+    color: #1A468E;
+    padding-bottom: 30px;
+}
+
+.middle-siamo > * {
+    color: #999999;
+}
 
 .bottom-siamo {}
