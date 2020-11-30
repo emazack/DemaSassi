@@ -518,23 +518,6 @@ header .scopri-button {
         font-size            : 100px;
     }
 
-    /* h2 {
-        font-family: 'TitlingGothicFB Comp',sans-serif;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 48px;
-    }
-
-    p{
-        font-family: 'TitlingGothicFB Comp', sans-serif;
-        font-style : normal;
-        font-weight: 500;
-        font-size  : 26px;
-        line-height: 130%;
-        text-align : center;
-    } */
-
         /* Header */
 
     header {
@@ -609,6 +592,125 @@ header .scopri-button {
     .bottom-produttivo{
         padding-bottom: 120px;
     }
+
+        /* conta su di noi */
+
+
+    .top-conta {
+        padding-bottom: 60px;
+    }
+
+    .top-conta p {
+        width: 53%;
+    }
+
+    .top-conta h1 {
+        width: 47%;
+        padding-bottom: 25px;
+    }
+
+    .middle-conta {
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+
+    .middle-conta div p {
+        padding-bottom: 30px;
+    }
+
+    .middle-conta div h2 {
+        font-size: 100px;
+        padding-bottom: 45px;
+    }
+
+    .bottom-conta {
+        padding-bottom: 70px;
+    }
+
+    /* chi ci ha scelto */
+
+    #scelto{
+        margin-bottom: 50px;
+        padding-top: 60px;
+    }
+
+    .top-scelto {
+        padding-bottom: 40px;
+        padding-top: 50px;
+        max-width: 50%;
+    }
+
+    .middle-scelto {
+        width: 80%;
+        padding-bottom: 60px;
+    }
+
+    .middle-scelto h2 {
+        padding-bottom: 30px;
+    }
+
+    .bottom-scelto{
+        margin-bottom: 0px;
+    }
+
+    /* chi siamo */
+
+    .top-siamo{
+        padding-top: 0px;
+    }
+
+    .top-siamo h1 {
+        padding-bottom: 25px;
+    }
+
+    .top-siamo p {
+        padding-bottom: 52px;
+    }
+
+    .middle-siamo {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .middle-siamo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .middle-siamo img:first-child{
+        margin-right: 135px;
+    }
+
+    .paragraph-siamo{
+        padding: 0px 475px;
+        padding-bottom: 90px;
+    }
+
+    .paragraph-siamo > *{
+        font-family: 'TitlingGothicFB Comp', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+    }
+
+    .paragraph-siamo p{
+        color: #999999;
+        text-align: left;
+    }
+
+    .paragraph-siamo p:last-child{
+        color: #3E7EE6;
+    }
+
+    .paragraph-siamo span{
+        color: #1A468E;
+    }
+
+    .bottom-siamo{
+        padding-bottom: 100px;
+    }
+
 
 
 }
