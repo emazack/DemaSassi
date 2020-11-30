@@ -19,8 +19,32 @@ button {
     background-color: transparent;
     border          : none;
     padding      : 6px 30px;
-    border       : 1px solid #FFFFFF;
     border-radius: 5px;
+    font-family: 'TitlingGothicFB Comp', sans-serif;
+    font-style : normal;
+    font-weight: 600;
+    font-size  : 26px;
+    line-height: 130%;
+    text-align : center;
+}
+
+.button-white{
+    border       : 1px solid #FFFFFF;
+}
+.button-white:hover{
+    color: #1A468E;
+    background-color: #FFFFFF;
+}
+
+.button-blue{
+    border: 1px solid #1A468E;
+    color: #1A468E;
+}
+
+.button-blue:hover{
+    border: 1px solid #FFFFFF;
+    background-color: #1A468E;
+    color: #FFFFFF;
 }
 
 
@@ -44,8 +68,7 @@ h2 {
     line-height: 48px;
 }
 
-p,
-button {
+p{
     font-family: 'TitlingGothicFB Comp', sans-serif;
     font-style : normal;
     font-weight: 500;
@@ -146,9 +169,6 @@ header {
 }
 
 header .scopri-button {
-    padding      : 6px 30px;
-    border       : 1px solid #FFFFFF;
-    border-radius: 5px;
     position     : absolute;
     bottom       : 19%;
     right        : 44%;
@@ -276,16 +296,11 @@ header .scopri-button {
     padding-bottom: 161px;
 }
 
-.bottom-conta button {
-    border: 1px solid  #1A468E;
-    font-weight: 600;
-}
-
 .top-conta p {
     color: #999999;
 }
 
-.middle-conta div p, .top-conta h1, .top-conta p span, .bottom-conta button{
+.middle-conta div p, .top-conta h1, .top-conta p span{
     color: #1A468E;
 }
 
@@ -341,6 +356,8 @@ header .scopri-button {
 }
 
 
+
+
 /* chi siamo */
 
 #siamo div {
@@ -393,16 +410,10 @@ header .scopri-button {
     color: #3E7EE6;
 }
 
-.paragraph-siamo span, .bottom-siamo button{
+.paragraph-siamo span{
     color: #1A468E;
 }
 
 .bottom-siamo{
     padding-bottom: 100px;
-}
-
-
-.bottom-siamo button {
-    font-weight: 600;
-    border: 1px solid  #1A468E; 
 }
