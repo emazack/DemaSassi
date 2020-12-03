@@ -8,6 +8,8 @@
   text-align: center;
   color: white;
   outline: none;
+  font-family: "TitlingGothicFB Comp", sans-serif;
+  
 }
 
 img {
@@ -25,19 +27,18 @@ img {
 button {
   background-color: transparent;
   border: none;
-  padding: 6px 30px;
+  padding: 10px 30px;
   border-radius: 5px;
-  font-family: "TitlingGothicFB Comp", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
-  line-height: 130%;
   text-align: center;
 }
 
 .button-white {
   border: 1px solid #ffffff;
 }
+
 .button-white:hover {
   color: #1a468e;
   background-color: #ffffff;
@@ -57,30 +58,17 @@ button {
 /* typography */
 
 .title {
-  font-family: "TitlingGothicFB Comp", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 200px;
-  line-height: 95%;
+  font-size: clamp(3.4rem, -1.23rem + 10vw, 12.5rem);
   text-align: center;
   font-feature-settings: "liga" off;
 }
 
-h2 {
-  font-family: "TitlingGothicFB Comp", sans-serif;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 48px;
-}
-
-p {
-  font-family: "TitlingGothicFB Comp", sans-serif;
+.subtitle{
   font-style: normal;
   font-weight: 500;
-  font-size: 26px;
-  line-height: 130%;
-  text-align: center;
+  font-size: 30;
 }
 
 /* Header */
@@ -95,7 +83,6 @@ p {
   justify-content: space-between;
   align-items: center;
   padding-top: 37px;
-  margin-bottom: 190px;
   position: absolute;
   top: 0;
   right: 0;
@@ -111,6 +98,10 @@ p {
   width: 100%;
 }
 
+.hamburger{
+  display: none;
+}
+
 .top-header .menu .navbar,
 .top-header .menu .language-selector {
   display: flex;
@@ -120,7 +111,6 @@ p {
   font-style: normal;
   font-weight: 450;
   font-size: 20px;
-  line-height: 24px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -160,21 +150,18 @@ p {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding-top: 45px;
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
-  padding-top: 270px;
+.single-slide .wrapper .subtitle{
+  margin-bottom: 92px;
 }
 
-.title .title {
-  margin-bottom: 25px;
-}
 
 .prev,
 .next {
   position: absolute;
+  top: 50%;
   bottom: 50%;
   padding: 0px;
   border: none;
@@ -189,9 +176,6 @@ p {
   right: 40px;
 }
 
-.main-slider p {
-  margin-bottom: 98px;
-}
 .single-slide .wrapper {
   display: flex;
   height: 800px;
@@ -202,17 +186,20 @@ p {
 
 .bottom-header {
   position: absolute;
-  bottom: 80px;
-  right: 220px;
+  bottom: 10%;
+  right: 10.5%;
 }
 
 .bottom-header .slick-dots li {
   width: 5px;
   height: 5px;
   border-radius: 100px;
-  border: 1px solid white;
-  padding: 17.5px;
+  padding: 16.5px;
   background: transparent;
+}
+
+.bottom-header .slick-dots li:hover {
+  border: 1px white solid;
 }
 
 .slick-dots li button {
@@ -315,11 +302,9 @@ p {
 }
 
 .middle-conta div h2 {
-  font-family: "TitlingGothicFB Comp", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 200px;
-  line-height: 95%;
   text-align: center;
   font-feature-settings: "liga";
 }
@@ -340,11 +325,9 @@ p {
 
 .middle-conta div p,
 .top-conta p span {
-  font-family: "TitlingGothicFB Comp", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
-  line-height: 130%;
 }
 
 #conta h2 {
@@ -435,7 +418,6 @@ p {
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
-  line-height: 140%;
 }
 
 .paragraph-siamo p {
@@ -459,35 +441,14 @@ p {
 @media screen and (max-width: 1480px) {
   /* general rules */
 
-  .title {
-    font-weight: 900;
-    font-size: 150px;
-  }
 
-  /* chi siamo */
-  .paragraph-siamo {
-    padding: 0px 175px;
-    padding-bottom: 90px;
-  }
 }
 
 /* small laptop (1280px and down) */
 @media screen and (max-width: 1280px) {
-  /* General Rules */
-  .wrapper {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
 
   /* Header */
 
-  .top-header {
-    padding-left: 40px;
-  }
-
-  header .scopri-button {
-    right: 43%;
-  }
 
   /* chi ci ha scelto */
   .top-scelto {
@@ -505,25 +466,9 @@ p {
 @media screen and (max-width: 1024px) {
   /* Header */
 
-  .top-header nav ul li {
-    margin-right: 28px;
-  }
-
-  .prev {
-    left: 10px;
-  }
-
-  .next {
-    right: 10px;
-  }
-
-  header .scopri-button {
-    right: 34%;
-  }
-
   .bottom-header {
-    bottom: 50px;
-    right: 160px;
+    bottom: 7%;
+    right: 15%;
   }
 
   /* conta su di noi */
@@ -533,208 +478,88 @@ p {
   }
 }
 
-/* Medium devices (tablets, large mobile, 802px and down) */
-@media screen and (max-width: 802px) {
+@media screen and (max-width: 768px) {
+
   /* typography */
-
+  
   .title {
-    font-weight: 900;
-    font-size: 100px;
+    /* font-size: 80px; */
   }
-
+  
+  .subtitle{
+    font-size: 22px;
+    width: 269.95px;
+    height: 66.34px;
+  }
+  
   /* Header */
 
-  header {
-    height: 799px;
+  .top-header .menu{
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .header {
+    height: 700px;
     position: relative;
   }
-
-  .top-header {
-    justify-content: center;
-    padding-top: 37px;
-    margin-bottom: 190px;
-  }
-
-  .top-header nav ul {
+  
+  .top-header .menu {
     display: none;
   }
-
-  .title .title {
-    margin-bottom: 20px;
+  
+  .single-slide .wrapper .subtitle{
+    margin-bottom: 60px;
   }
-
-  button.prev img,
-  button.next img {
+  
+  
+  .prev,
+  .next {
     display: none;
   }
-
-  .main-slider p {
-    padding: 0px 160px;
-  }
-
-  header .scopri-button {
-    bottom: 25%;
-  }
-
+  
   .bottom-header {
-    bottom: 80px;
-    right: 454px;
+    position: absolute;
   }
-
-  /* Sii produttivo */
-
-  #produttivo {
-    margin-bottom: 100px;
+  
+  .bottom-header .slick-dots li {
+    width: 5px;
+    height: 5px;
+    border-radius: 100px;
+    padding: 16.5px;
+    background: transparent;
   }
-
-  .top-produttivo {
-    padding-bottom: 60px;
+  
+  .bottom-header .slick-dots li:hover {
+    border: 1px white solid;
   }
-
-  .top-produttivo .title {
-    padding-bottom: 20px;
+  
+  .slick-dots li button {
+    content: "●";
+    top: 7px;
+    left: 7px;
   }
-
-  .middle-produttivo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 40px;
-  }
-
-  .middle-produttivo > div {
-    text-align: center;
-    padding-bottom: 60px;
-    width: 96%;
-  }
-
-  .middle-produttivo div h2 {
-    padding-bottom: 20px;
-  }
-
-  .bottom-produttivo {
-    padding-bottom: 120px;
-  }
-
-  /* conta su di noi */
-
-  .top-conta {
-    padding-bottom: 60px;
-  }
-
-  .top-conta p {
-    width: 53%;
-  }
-
-  .top-conta .title {
-    width: 47%;
-    padding-bottom: 25px;
-  }
-
-  .middle-conta {
-    flex-direction: column;
-    padding-bottom: 5px;
-  }
-
-  .middle-conta div p {
-    padding-bottom: 30px;
-  }
-
-  .middle-conta div h2 {
-    font-size: 100px;
-    padding-bottom: 45px;
-  }
-
-  .bottom-conta {
-    padding-bottom: 70px;
-  }
-
-  /* chi ci ha scelto */
-
-  #scelto {
-    margin-bottom: 50px;
-    padding-top: 60px;
-  }
-
-  .top-scelto {
-    padding-bottom: 40px;
-    padding-top: 50px;
-    max-width: 50%;
-  }
-
-  .middle-scelto {
-    width: 80%;
-    padding-bottom: 60px;
-  }
-
-  .middle-scelto h2 {
-    padding-bottom: 30px;
-  }
-
-  .bottom-scelto {
-    margin-bottom: 0px;
-  }
-
-  /* chi siamo */
-
-  .top-siamo {
-    padding-top: 0px;
-  }
-
-  .top-siamo .title {
-    padding-bottom: 25px;
-  }
-
-  .top-siamo p {
-    padding-bottom: 52px;
-  }
-
-  .middle-siamo {
-    flex-direction: column;
-    padding-bottom: 50px;
-  }
-
-  .middle-siamo img {
-    width: 100%;
-    height: auto;
-  }
-
-  .middle-siamo img:first-child {
-    margin-right: 135px;
-  }
-
-  .paragraph-siamo {
-    padding: 0px 475px;
-    padding-bottom: 90px;
-  }
-
-  .paragraph-siamo > * {
-    font-family: "TitlingGothicFB Comp", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 140%;
-  }
-
-  .paragraph-siamo p {
+  
+  .slick-dots li.slick-active button::before,
+  .slick-dots li button::before {
     color: #999999;
-    text-align: left;
+    top: 7px;
+    left: 7px;
+    font-size: 5px;
   }
+  
+  .bottom-header .slick-dots {
+    display: flex;
+  }
+  
 
-  .paragraph-siamo p:last-child {
-    color: #3e7ee6;
-  }
-
-  .paragraph-siamo span {
-    color: #1a468e;
-  }
-
-  .bottom-siamo {
-    padding-bottom: 100px;
-  }
 }
 
-/* Small devices (mobile, 576px and down) */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 375px) {
+
+  
+
 }
