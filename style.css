@@ -64,31 +64,31 @@ button {
   font-feature-settings: "liga" off;
 }
 
-.subtitle{
+.subtitle {
   font-style: normal;
   font-weight: 500;
   font-size: clamp(1.1rem, -0.6rem + 2vw, 3.1rem);
 }
 
-.navtext{
+.navtext {
   font-style: normal;
   font-weight: 450;
   font-size: clamp(0.9rem, -0.3rem + 1.3vw, 1.9rem);
   text-transform: uppercase;
 }
 
-.heading-bold{
+.heading-bold {
   font-size: clamp(1.9rem, -1.3rem + 2.6vw, 4.3rem);
   font-style: normal;
   font-weight: 900;
   text-align: center;
 }
 
-.text{
+.text {
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
-  }
+}
 
 /* Header */
 
@@ -97,7 +97,10 @@ button {
   position: relative;
 }
 
-.main-slider, .slick-list, .slick-track, .single-slide{
+.main-slider,
+.slick-list,
+.slick-track,
+.single-slide {
   height: 100%;
 }
 
@@ -121,7 +124,7 @@ button {
   width: 100%;
 }
 
-.hamburger{
+.hamburger {
   display: none;
 }
 
@@ -133,11 +136,10 @@ button {
   color: #ffffff;
 }
 
-.top-header .menu .navbar{
-    max-width: 80%;
-    width: 100%;
+.top-header .menu .navbar {
+  max-width: 80%;
+  width: 100%;
 }
-
 
 .top-header .menu .language-selector {
   width: 5%;
@@ -153,7 +155,7 @@ button {
   cursor: pointer;
 }
 
-.single-lang{
+.single-lang {
   padding: 0 20%;
 }
 
@@ -172,8 +174,7 @@ button {
   align-items: center;
 }
 
-
-.slick-initialized .slick-slide{
+.slick-initialized .slick-slide {
   display: flex;
 }
 
@@ -200,7 +201,7 @@ button {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height:90%;
+  height: 90%;
 }
 
 .bottom-header {
@@ -248,7 +249,7 @@ button {
   height: 928px;
 }
 
-.productive-wrapper{
+.productive-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -451,15 +452,11 @@ button {
 /* large laptop (1480px and down) */
 @media screen and (max-width: 1480px) {
   /* general rules */
-
-
 }
 
 /* small laptop (1280px and down) */
 @media screen and (max-width: 1280px) {
-
   /* Header */
-
 
   /* chi ci ha scelto */
   .top-scelto {
@@ -495,23 +492,25 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-
   /* General Rules */
 
   /* typography */
 
-  .title{
+  .title {
     margin-bottom: 0px;
   }
-  
-  .subtitle{
+
+  .subtitle {
     width: 260px;
   }
-  
+
   /* Header */
 
-  .top-header .menu{
+  .top-header .menu {
     display: none;
+  }
+  .top-header .menu.active {
+    display: flex;
   }
 
   .hamburger {
@@ -522,28 +521,22 @@ button {
     height: 700px;
     position: relative;
   }
-  
-  .top-header .menu {
-    display: none;
-  }
 
-  .single-slide .wrapper{
+  .single-slide .wrapper {
     height: 40%;
   }
-  
-  
+
   .prev img,
   .next img {
     display: none;
   }
 
-  
   .bottom-header {
     position: absolute;
     right: 450px;
     bottom: 32px;
   }
-  
+
   .bottom-header .slick-dots li {
     width: 5px;
     height: 5px;
@@ -551,17 +544,17 @@ button {
     padding: 16.5px;
     background: transparent;
   }
-  
+
   .bottom-header .slick-dots li:hover {
     border: 1px white solid;
   }
-  
+
   .slick-dots li button {
     content: "●";
     top: 7px;
     left: 7px;
   }
-  
+
   .slick-dots li.slick-active button::before,
   .slick-dots li button::before {
     color: #999999;
@@ -569,16 +562,13 @@ button {
     left: 7px;
     font-size: 5px;
   }
-  
+
   .bottom-header .slick-dots {
     display: flex;
   }
-  
-
 }
 
 @media screen and (max-width: 375px) {
-
   /* header */
 
   .bottom-header {
@@ -586,5 +576,4 @@ button {
     right: 252px;
     bottom: 92px;
   }
-
 }
