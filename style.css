@@ -84,6 +84,12 @@ button {
   text-align: center;
 }
 
+.text{
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  }
+
 /* Header */
 
 .header {
@@ -233,49 +239,41 @@ button {
   display: flex;
 }
 
-/* Sii produttivo */
+/* Sii productive */
 
-#produttivo {
-  background-image: url(img/produttivo.png);
-  height: 926px;
+#productive {
+  background-image: url(img/productive.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 928px;
+}
+
+.productive-wrapper{
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 168px;
-  padding-top: 155px;
+  justify-content: space-evenly;
+  height: 100%;
 }
 
-.top-produttivo {
-  margin-bottom: 121px;
-}
-
-.top-produttivo .title {
-  margin-bottom: 20px;
-}
-
-.middle-produttivo {
+.middle-productive {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1600px;
+  max-width: 89.6%;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 40px;
 }
 
-.middle-produttivo > div {
+.middle-productive > div {
   width: 100%;
-  min-height: 184px;
-  max-width: 480px;
+  align-self: baseline;
+  max-width: 30.5%;
 }
 
-.middle-produttivo div h2 {
+.middle-productive div h2 {
   color: #3e7ee6;
-  margin-bottom: 18px;
-}
-
-.bottom-produttivo {
-  padding-bottom: 160px;
+  margin-bottom: 3.8%;
 }
 
 /* conta su di noi */
